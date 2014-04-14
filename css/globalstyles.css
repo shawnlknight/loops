@@ -1,0 +1,16 @@
+.wod {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+.wod li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 22px;
+	font-family: sans-serif;
+	color:white;
+	background: black;
+	position: relative;
+
+}
