@@ -67,8 +67,6 @@ $(this).toggleClass("magnify");
     
 // });
 
-// $(".contents").append(contentTemplete(content));
-
 //end of table of contents
 
 
