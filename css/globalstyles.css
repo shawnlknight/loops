@@ -57,24 +57,22 @@ div img.magnify {
 	opacity: 1;
 }
 
-.table {
-	position: absolute;
-	margin-bottom: 0;
-	margin-left: 4.5%;
-	text-decoration: underline;
-}
 
 .contents {
 	margin-top: 0;
 	float: left;
 	width: 200px;
 	height: 200px;
-	/*border: 1px solid black;*/
+	/*border: 1px solid gray;*/
+}
+
+.contents h4 {
+	margin-left: 10%;
+	margin-bottom: 10px;
 }
 
 .contents ul {
 	margin-bottom: 10px;
-	color: red;
 }
 
 

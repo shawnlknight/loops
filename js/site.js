@@ -44,30 +44,32 @@ $(this).toggleClass("magnify");
 
 
 
-//table of contents for history page
- var content = ["Glassman", "Affiliates", "CrossFit Games"];
+//Table of contents using jQuery.each() 
+$(document).ready(function() {
 
-    var contentTemplete = function(content) {
-        var markup = "";
-        var i; 
+var contents = [
+  {
+    section: "Glassman"
+  },
+  {
+    section: "Affiliates"
+  },
+  {
+    section: "Crossfit Games"
+  }
+];
 
-        for(i = 0; i < content.length; i++) {//i++ adds one
-          markup += "<ul>" + content[i] + "</ul>";
-        }
-        return markup; 
-  };
+var markup = "";
 
-  $(".contents").append(contentTemplete(content));
+  $.each(contents, function(key, value) {
 
+    markup += "<ul>" + contents[key].section + "</ul>";
 
-//using .each
-// var obj = {"Glassman", "Affiliates", "CrossFit Games"};
+  }); 
 
-// $.each(obj, function( i, val ) {
-    
-// });
+$(".contents").append(markup);
 
-//end of table of contents
+});
 
 
 
