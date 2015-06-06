@@ -4,17 +4,16 @@
 	height: 100%;
 	margin-left: 24%;
 	margin-top: 10%;
-	/*border: 1px solid black;*/
 }
 
 a {
 	text-decoration: none;
-	color:white;
+	color: #fff;
 }
 
 .wod {
 	margin-left: 24%;
-	padding:0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -23,9 +22,13 @@ a {
 	margin-right: 30px;
 	font-size: 22px;
 	font-family: sans-serif;
-	color:white;
-	background: black;
+	color: #fff;
+	background-color: rgb(50, 50, 50);
 	position: relative;
+}
+
+.wod li:hover {
+	background-color: rgb(140, 140, 140);
 }
 
 .wod a {
@@ -47,23 +50,25 @@ a {
 .album img {
 	height: 100px;
 	width: 150px;
-	opacity: .4;
-	display: inline-block;
+	opacity: .6;
+	cursor: pointer;
 } 
 
-div img.magnify {
-	height:300px;
-	width:350px;
+.album img:hover {
 	opacity: 1;
 }
 
+div img.magnify {
+	height: 300px;
+	width: 350px;
+	opacity: 1;
+}
 
 .contents {
 	margin-top: 0;
 	float: left;
 	width: 200px;
 	height: 200px;
-	/*border: 1px solid gray;*/
 }
 
 .contents h4 {
@@ -74,6 +79,40 @@ div img.magnify {
 .contents ul {
 	margin-bottom: 10px;
 }
+
+@media screen and (max-width: 900px) {
+	.wod {
+		margin-left: 0;
+	}
+
+	.wod li {
+		display: block;
+		border-bottom: 1px solid #fff;
+	}
+
+	.container {
+		margin-left: 0;		
+	}
+
+	.album div {
+		display: block;
+	}
+
+	div img.magnify {
+		height: 200px;
+		width: 250px;
+	}
+
+	.pics {
+		margin-left: 0;
+	}
+
+	.container {
+		clear: both;
+		width: auto;
+	}
+}
+
 
 
 
