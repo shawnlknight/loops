@@ -21,20 +21,20 @@ $(".wod").append(wodTemplete(wodArray));
 var albumArray = ["<img src=images/kferris.jpg>", "<img src=images/klokov.jpg>", "<img src=images/muscleup.png>", "<img src=images/hspu.jpg>"];
 
 var albumTemplete = function(albumData) {
-      var markup = "";
-      var i; 
+  var markup = "";
+  var i; 
 
-      for(i = 0; i < albumData.length; i++) {//i++ adds one
-        markup += "<div>" + albumData[i] + "</div>";
-      }
-      return markup; 
+  for(i = 0; i < albumData.length; i++) {//i++ adds one
+    markup += "<div>" + albumData[i] + "</div>";
+  }
+  return markup; 
 };
 
 $(".album").append(albumTemplete(albumArray));
 
 //To Show and Hide pictures
 $(".album img").click(function(event) {
-        event.preventDefault();
+  event.preventDefault();
 
   $(this).closest("div").siblings().toggle();
   $(this).toggleClass("magnify");
