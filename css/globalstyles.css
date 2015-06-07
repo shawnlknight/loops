@@ -1,4 +1,6 @@
-
+h2, h4 {
+	font-family: sans-serif;
+}
 .container {
 	width: 700px;
 	height: 100%;

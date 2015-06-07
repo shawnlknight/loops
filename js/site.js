@@ -1,5 +1,7 @@
 //List of CrossFit movements
-var wodArray = ["<a href=index.html>Home</a>", "<a href=history.html>History</a>", "<a href=clean.html>Clean & Jerk</a>", "<a href=snatch.html>Snatch</a>", "<a href=muscleup.html>Muscle Up</a>", "<a href=hspu.html>HSPU</a>"];
+var wodArray = ["<a href=index.html>Home</a>", "<a href=history.html>History</a>", 
+                "<a href=clean.html>Clean & Jerk</a>", "<a href=snatch.html>Snatch</a>", 
+                "<a href=muscleup.html>Muscle Up</a>", "<a href=hspu.html>HSPU</a>"];
   
 //param {wodData} array of wods
 var wodTemplete = function(wodData) {
@@ -18,7 +20,8 @@ $(".wod").append(wodTemplete(wodArray));
 
 
 //photo album for home page
-var albumArray = ["<img src=images/kferris.jpg>", "<img src=images/klokov.jpg>", "<img src=images/muscleup.png>", "<img src=images/hspu.jpg>"];
+var albumArray = ["<img src=images/kferris.jpg>", "<img src=images/klokov.jpg>", 
+                  "<img src=images/muscleup.png>", "<img src=images/hspu.jpg>"];
 
 var albumTemplete = function(albumData) {
   var markup = "";
