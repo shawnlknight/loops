@@ -3,13 +3,13 @@ var wodArray = ["<a href=index.html>Home</a>", "<a href=history.html>History</a>
   
 //param {wodData} array of wods
 var wodTemplete = function(wodData) {
-      var markup = "";
-      var i; 
+  var markup = "";
+  var i; 
 
-      for(i = 0; i < wodData.length; i++) {//i++ adds one
-        markup += "<li>" + wodData[i] + "</li>";
-      }
-      return markup; 
+  for(i = 0; i < wodData.length; i++) {//i++ adds one
+    markup += "<li>" + wodData[i] + "</li>";
+  }
+  return markup; 
 };
 
 $(".wod").append(wodTemplete(wodArray));
