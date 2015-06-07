@@ -1,7 +1,7 @@
 //List of CrossFit movements
-var wodArray = ["<a href=index.html>Home</a>", "<a href=history.html>History</a>", 
-                "<a href=clean.html>Clean & Jerk</a>", "<a href=snatch.html>Snatch</a>", 
-                "<a href=muscleup.html>Muscle Up</a>", "<a href=hspu.html>HSPU</a>"];
+var wodArray = ["<a href=index.html><li>Home</li></a>", "<a href=history.html><li>History</li></a>", 
+                "<a href=clean.html><li>Clean & Jerk</li></a>", "<a href=snatch.html><li>Snatch</li></a>", 
+                "<a href=muscleup.html><li>Muscle Up</li></a>", "<a href=hspu.html><li>HSPU</li></a>"];
   
 //param {wodData} array of wods
 var wodTemplete = function(wodData) {
@@ -9,7 +9,7 @@ var wodTemplete = function(wodData) {
   var i; 
 
   for(i = 0; i < wodData.length; i++) {//i++ adds one
-    markup += "<li>" + wodData[i] + "</li>";
+    markup += wodData[i];
   }
   return markup; 
 };
